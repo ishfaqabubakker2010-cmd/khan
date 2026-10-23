@@ -1,0 +1,46 @@
+:root{--red:#c8102e;--red2:#8f0a20;--bg:#fff;--bg2:#f6f3f2;--tx:#1d1415;--mu:#6b5c5e;--card:#fff;--bd:#e8dedf;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#150d0e;--bg2:#1e1415;--tx:#f5eceb;--mu:#b9a7a8;--card:#251a1b;--bd:#3a2a2b}}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:'Segoe UI',Roboto,Arial,sans-serif;line-height:1.55}
+img{max-width:100%;display:block}a{color:inherit;text-decoration:none}
+.w{max-width:1120px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--red);color:#fff}
+header .w{display:flex;align-items:center;justify-content:space-between;height:60px}
+header .logo{height:44px;width:auto;display:block}
+nav{display:flex;gap:20px;font-size:14px;font-weight:600}
+.btn{display:inline-block;background:#fff;color:var(--red);padding:11px 22px;border-radius:30px;font-weight:700;font-size:15px}
+.btn.o{background:transparent;color:#fff;border:2px solid #fff;padding:9px 20px}
+.hero{background:linear-gradient(135deg,var(--red2),var(--red));color:#fff;padding:56px 0}
+.hero .w{display:grid;grid-template-columns:1.1fr 1fr;gap:36px;align-items:center}
+.hero h1{font-size:clamp(30px,5vw,48px);line-height:1.1;margin:0 0 14px}
+.hero p{opacity:.92;font-size:17px;max-width:480px}
+.hero .img{border-radius:18px;overflow:hidden;box-shadow:0 20px 50px #0005;transform:rotate(1.5deg)}
+.hero img{width:100%;height:auto}
+.badges{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0 26px}
+.badges span{background:#ffffff26;padding:6px 14px;border-radius:20px;font-size:13px;font-weight:600}
+section{padding:60px 0}.alt{background:var(--bg2)}
+h2{font-size:30px;margin:0 0 6px}h2+p{color:var(--mu);margin:0 0 30px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:16px;overflow:hidden;transition:.2s}
+.card:hover{transform:translateY(-4px);box-shadow:0 12px 28px #0002}
+.card .p{height:200px;background:#fff;display:flex;align-items:center;justify-content:center;padding:10px}
+.card .p img{max-height:100%;object-fit:contain}
+.card .i{height:200px;display:flex;align-items:center;justify-content:center;font-size:70px;background:linear-gradient(135deg,#fde8ea,#fff)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .card .i{background:#33191d}}
+.card div.t{padding:14px 16px}.card b{display:block}.card small{color:var(--mu)}
+.tag{display:inline-block;margin-top:8px;font-size:12px;color:var(--red);font-weight:700}
+.inst{background:var(--red);color:#fff;border-radius:22px;display:grid;grid-template-columns:1fr 1.3fr;overflow:hidden;align-items:center}
+.inst div{padding:34px}.inst h2{color:#fff}.inst img{height:100%;min-height:240px;object-fit:cover;width:100%}
+.inst li{margin:6px 0}
+.two{display:flex;justify-content:center;gap:24px;flex-wrap:wrap}
+.two img{border-radius:16px;height:300px;width:auto;box-shadow:0 10px 26px #0003}
+.rev{display:grid;grid-template-columns:1fr 2fr;gap:24px;align-items:center}
+.score{text-align:center;background:var(--card);border:1px solid var(--bd);border-radius:16px;padding:28px}
+.score b{font-size:60px;color:var(--red);line-height:1}.stars{color:#f5a623;font-size:22px}
+blockquote{margin:0;background:var(--card);border-left:5px solid var(--red);border-radius:12px;padding:22px}
+.ct{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.ct div{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:20px}
+.ct b{color:var(--red);display:block;margin-bottom:4px}
+footer{background:#1a0a0d;color:#d9c8ca;text-align:center;padding:28px 20px;font-size:14px}
+.wa{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));background:#25d366;color:#fff;padding:13px 20px;border-radius:30px;font-weight:700;box-shadow:0 6px 18px #0004;z-index:30}
+@media(max-width:760px){nav{display:none}.hero .w,.inst,.two,.rev{grid-template-columns:1fr}}
